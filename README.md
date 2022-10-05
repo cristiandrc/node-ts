@@ -1,2 +1,4 @@
 # node-ts
-node whit typeScript and Express miduDev
+node with typeScript and Express miduDev
+
+https://www.youtube.com/watch?v=ZpY5KdGQvwI&t=10s&ab_channel=midudev
