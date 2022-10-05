@@ -3,6 +3,6 @@ import { DiaryEntry } from '../types'
 
 const diaries: DiaryEntry[] = diaryData as DiaryEntry[]
 
-export const getEntries = () => diaries
+export const getEntries = (): DiaryEntry[] => diaries
 
-export const addEntry = () => null
+export const addEntry = (): undefined => undefined
