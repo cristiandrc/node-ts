@@ -1,9 +1,17 @@
 import express from 'express' // ESModule
+import * as diaryServices from '../services/diaryServices'
 
 const router = express.Router()
 
 router.get('/', (_req, res) => {
-  res.send('Fetching all entry dairies')
+  res.send(diaryServices.getEntriesWithoutSensitiveInfo())
+})
+
+router.get('/:id', (req, res) => {
+  const diary = diaryServices.findById(+req.params.id)
+  return (diary !== null)
+    ? res.send(diary)
+    : res.sendStatus(404)
 })
 
 router.get('/', (_req, res) => {

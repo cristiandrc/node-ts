@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
-    "dev": "ts-node-dev src/index.ts --fix ",
+    "dev": "ts-node-dev src/index.ts",
     "start": "node build/index.js",
-    "lint": "ts-standard",
+    "lint": "ts-standard --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Cristian Rojas <cristian.rojas.d@outlook.com>",
